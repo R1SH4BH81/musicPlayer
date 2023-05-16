@@ -79,9 +79,10 @@
   body.dark-mode .glow-effect
    {
     
-    
+    display: inline-block;
+    padding: 10px;
     background-color: black;
-    
+    transition: box-shadow 0.3s ease-in-out;
   }
  
   
@@ -113,8 +114,11 @@
     background-color:#eef3f7
   }
   body.dark-mode .sint {
-    color: white;
+  color: white;
+  padding: 10px;
   border-color:white;
+  font-size: 16px;
+    text-align: center;
   background-color: black; /* Text color for dark mode */
   }
   button {
@@ -130,6 +134,12 @@
   body.dark-mode .button{
     background-color:black;
     color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   button:hover {
@@ -147,7 +157,7 @@
     background-color: black;
   }
   .wrapper {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
