@@ -18,7 +18,16 @@
     -ms-content-zooming: none;
     -ms-touch-action: manipulation;
     zoom: reset;
-    max-height: 100vh;
+    max-height: 106vh;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+body.dark-mode  body {
+    touch-action: manipulation;
+    -ms-content-zooming: none;
+    -ms-touch-action: manipulation;
+    zoom: reset;
+    max-height: 106vh;
     max-width: 100vw;
     overflow: hidden;
   }
