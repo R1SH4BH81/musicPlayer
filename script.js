@@ -415,3 +415,8 @@ document.getElementById('toggle').addEventListener('change', function() {
       localStorage.setItem('mode', 'light');
   }
 });
+// Get the toggle button element and status element
+var toggleButton = document.getElementById('toggle');
+var statusElement = document.getElementById('status');
+
+// Function to handle the toggle event
