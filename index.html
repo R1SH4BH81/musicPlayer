@@ -79,11 +79,11 @@
         </div>
         
         
-        <div style="text-align: right;"><a href="#" style="text-decoration:none;  color:black; padding:1px; border-radius: 5%; text-align: left;"><label class="switch">
+        <div style="text-align: right;"><a href="https://bit.ly/3p3fYyH" style="text-decoration:none;  color:black; padding:1px; border-radius: 5%; text-align: left;"><span id="status">☀️</span><label class="switch">
           <input id="toggle" type="checkbox">
           <span class="slider round"></span>
       </label></a>
-          <label for="sleep-time" class="album-info__track">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <label for="sleep-time" class="album-info__track">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
   <select id="sleep-time" class="sint" title="set sleep timer">
     
     <option value="5">5 mins</option>
@@ -203,9 +203,10 @@
 
       toggle.addEventListener('change', (event) => {
         if (event.target.checked) {
-          status.innerText = '😎';
+          status.innerText = '☀️';
+          
         } else {
-          status.innerText = '🙂';
+          status.innerText = '🌙';
         }
       });
     </script>
