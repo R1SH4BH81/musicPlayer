@@ -208,7 +208,7 @@
 
   .player {
     background: whitesmoke;
-    width: 380px;
+    width: 360px;
     min-height: 480px;
     box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
     border-radius: 15px;
@@ -216,7 +216,7 @@
   }
   body.dark-mode .player {
     background: 	black;
-    width: 380px;
+    width: 360px;
     min-height: 480px;
     box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
     border-radius: 15px;
@@ -224,7 +224,7 @@
   }
   @media screen and (max-width: 576px), (max-height: 500px) {
     .player {
-      width: 90%;
+      width: 85%;
       padding: 20px;
       margin-top: 75px;
       min-height: initial;
@@ -233,7 +233,7 @@
     }
     body.dark-mode .player {
        /* Text color for dark mode */
-       width: 90%;
+       width: 85%;
       padding: 20px;
       margin-top: 75px;
       min-height: initial;
