@@ -1,14 +1,14 @@
 new Vue({
   el: "#app",
   data() {
-    return {
-      audio: null,
-      circleLeft: null,
-      barWidth: null,
-      duration: null,
-      currentTime: null,
-      isTimerPlaying: false,
-      tracks: [
+    const shuffleArray = array => {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    };
+  
+    const tracks = [
         
         {
           artist: "In The Meantime",
@@ -250,12 +250,32 @@ new Vue({
         },
         
        
-      ],
-      currentTrack: null,
-      currentTrackIndex: 0,
-      transitionName: null
-    };
-  },
+      ];
+
+      const shuffledTracks = [...tracks];
+      shuffleArray(shuffledTracks);
+    
+      return {
+        audio: null,
+        circleLeft: null,
+        barWidth: null,
+        duration: null,
+        currentTime: null,
+        isTimerPlaying: false,
+        tracks: shuffledTracks,
+        currentTrack: null,
+        currentTrackIndex: 0,
+        transitionName: null
+      };
+    },
+    
+    
+    
+    
+    
+    
+    
+    
   methods: {
     play() {
       if (this.audio.paused) {
