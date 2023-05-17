@@ -144,7 +144,7 @@
   }
 
   button:hover {
-    background-color: #5674e1;
+    background-color: green;
   }
   
   .sint:focus {
@@ -185,7 +185,7 @@
     }
   }
   .progress__current {
-    background-color: black;
+    background-color: lightgray;
     animation: glowing 9s linear infinite;
   }
   body.dark-mode .progress__current {
