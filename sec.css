@@ -464,12 +464,12 @@
   .progress__current {
     height: inherit;
     width: 0%;
-    background-color: lightgray;
+    background-color: black;
     border-radius: 10px;
   }
   body.dark-mode .progress__current {
     
-    background-color: black;
+    background-color: gray;
     
   }
   .txt{
